@@ -6,39 +6,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Header: React.FC = () => {
   const router = useRouter()
   useEffect(() => {
-    let scrollpos = window.scrollY
-    const header = document.getElementById("header")
-    const navcontent = document.getElementById("nav-content")
-    const navaction = document.getElementById("nav-contact")
     const navMenuDiv = document.getElementById("nav-content")
     const navMenu = document.getElementById("nav-toggle")
-
-    document.addEventListener("scroll", function () {
-      scrollpos = window.scrollY
-      // if (scrollpos > 10) {
-      //   header.classList.add("bg-white")
-      //   header.classList.add("shadow")
-        
-      //   navaction.classList.remove("bg-white")
-      //   navaction.classList.add("gradient")
-      //   navaction.classList.remove("text-gray-800")
-      //   navaction.classList.add("text-white")
-        
-      //   navcontent.classList.remove("bg-gray-100")
-      //   navcontent.classList.add("bg-white")
-      // } else {
-      //   header.classList.remove("bg-white")
-      //   header.classList.remove("shadow")
-        
-      //   navaction.classList.remove("gradient")
-      //   navaction.classList.add("bg-white")
-      //   navaction.classList.remove("text-white")
-      //   navaction.classList.add("text-gray-800")
-        
-      //   navcontent.classList.remove("bg-white")
-      //   navcontent.classList.add("bg-gray-100")
-      // }
-    })
 
     document.onclick = check
     function check(e: { target: any }) {

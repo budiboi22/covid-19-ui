@@ -19,3 +19,5 @@ export {
   Subscribe,
   Symptomps,
 }
+
+export default Header

@@ -23,14 +23,12 @@ const Carousel:React.FC<any> = ({ data }) => {
       swipeToSlide: true
     };
 
-    if (data.length === 0) return <ClipLoader />
-
     return (
       <div>
         <h5 className="text-baseGreen-100 font-bold md:text-xl xl:text-3xl mb-4">Live Reports</h5>
         <Slider {...settings}>
-          {data.length === 0 && <ClipLoader />}
-          {data.length > 0 && data.map((row: any) => (
+          {data?.length === 0 && <ClipLoader />}
+          {data?.length > 0 && data.map((row: any) => (
             <div>
               {row.map((item: any) => (
                 <div className="container flex justify-between mb-1">
