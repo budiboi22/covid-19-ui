@@ -1,30 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Covid-19 UI #
 
-## Getting Started
+Landing Page for Covid 19 site
 
-First, run the development server:
+The UI is built using:
+ * react: https://facebook.github.io/react/
+ * nextjs: https://nextjs.org
+ * typescript: https://www.typescriptlang.org/
+ * tailwindcss: https://tailwindcss.com
+ * leafletjs: https://leafletjs.com/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Development/Local running
+To start developing this UI you there are some prerequisites:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* node.js ~ 12
+* yarn ~ 1.14
+* npm ~ 6.12
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+They all need to be installed globally (i.e. with `npm install -g`)
 
-## Learn More
+To develop/run the ui locally execute the following steps:
+1. Install the prereqs mentioned above.
+2. Check out the project from Github by copying the git end point from [covid-19-ui](https://github.com/budiboi22/covid-19-ui)
+3. Run `yarn install`
+4. To run the local server (in dev mode) run `yarn dev`
 
-To learn more about Next.js, take a look at the following resources:
+### Yarn Tasks
+- `yarn export` export to static HTML
+- `yarn build` builds the application for production usage
+- `yarn start` starts a Next.js production server
+- `yarn dev` starts Next.js in development mode
+`http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment as Static HTML
+`yarn export` will export this app to static HTML. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
